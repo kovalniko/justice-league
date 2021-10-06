@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>M-Box | Movies online</title>
+	<link rel="stylesheet" href="css/iconsfont.css" />
+	<link rel="stylesheet" href="css/style.css" />
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="favicon.ico">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="js/script.js"></script>
+</head>
+
+<body>
+	<header class="header">
+		<div class="header__container _container">
+			<div class="header__logo">
+				<a href="#" class="header__logo-link"><span class="_logo"><span class="_icon-logo-m"></span></span>box</a>
+			</div>
+			<nav class="header__menu">
+				<ul class="header__menu-items">
+					<li class="header__item header__item_active"><a href="#">Home</a></li>
+					<li class="header__item"><a href="#">TV Shows</a></li>
+					<li class="header__item"><a href="#">Movies</a></li>
+					<li class="header__item"><a href="#">Series</a></li>
+				</ul>
+			</nav>
+			<div class="header__user-panel">
+				<a href="#"><span class="_icon-search"></span></a>
+				<a href="#"><span class="_icon-notice"><span class="_icon-notice_active"></span></span></a>
+				<a href="#"><span class="_icon-profile"></span></a>
+			</div>
+		</div>
+		<form action="#" method="post" enctype="multipart/form-data" class="header__search-form">
+			<input placeholder="Search..." tabindex="1" name="search-query" type="text" class="header__search-input" />
+			<button tabindex="2" type="submit" class="header__search-btn _icon-search"></button>
+		</form>
+	</header>
+
+	<main class="main">
+		<!-- Это будет flex-контейнером для контентной части и для картинки (для всех устройств шире 767px) -->
+		<section class="premiere">
+			<!-- flex-элемент, который надо жёстко растянуть на 100% по ширине, "выдавив" картинку вправо -->
+			<div class="premiere__content">
+				<!-- Это ограничивающий контейнер (его будет видно только слева, там, где контент) -->
+				<div class="premiere__container _container">
+					<!-- Ограничивающий контейнер, чтобы ограничить справа контент, который прячется под картинку -->
+					<div class="premiere__body">
+						<h1 class="premiere__title">Zack Snyder's Jusice League</h1>
+						<p class="premiere__data">2021 <span class="premiere__age"><span>18+</span></span> 4h 2min <span
+								class="premiere__rating">8.8</span> <span class="_icon-star"></span></p>
+						<div class="premiere__info">
+							Determined to ensure Superman's ultimate sacrifice was not in vain, Bruce Wayne aligns forces with
+							Diana Prince with plans to recruit a team of metahumans to protect the world from an approaching
+							threat of catastrophic proportions.
+						</div>
+						<div class="premiere__buttons">
+							<a href="#" class="premiere__btn premiere__btn_active"><span><img
+										src="img/02-premiere/icons/play.svg" alt="play icon"></span> Watch</a><a href="#"
+								class="premiere__btn premiere__btn_white">More information</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- flex-элемент, который надо жёстко растянуть на некий процент, сколько изображение занимает места по макету от общей ширины flex-контейнера (для всех устройств шире 767px) -->
+			<!-- Затем свойством translate возвращаем картинку на 100% влево, чтобы её стало видно -->
+			<div class="premiere__image">
+				<!-- Самой картинке надо задать max-width: 100%; - это позволит ей при необходимости уменьшаться, что нужно для адаптации -->
+				<!-- При экранах шире 767px картинка размещается с абсолютным позиционированием на всю ширину и высоту родителя и с object-fit: cover -->
+				<img src="img/02-premiere/JL-transparent.png" alt="Poster of Justice League">
+			</div>
+		</section>
+
+		<section class="tv">
+			<div class="_container">
+				<h2 class="tv__title title"><a href="#">Trending TV Shows</a></h2>
+				<div class="tv__posters posters">
+					<!-- flex-контейнер -->
+					<div class="tv__item item">
+						<a href="#"><img src="img/03-tv/01.png" alt="TV Show poster"></a>
+					</div>
+					<div class="tv__item item">
+						<a href="#"><img src="img/03-tv/02.png" alt="TV Show poster"></a>
+					</div>
+					<div class="tv__item item">
+						<a href="#"><img src="img/03-tv/03.png" alt="TV Show poster"></a>
+					</div>
+					<div class="tv__item item">
+						<a href="#"><img src="img/03-tv/04.png" alt="TV Show poster"></a>
+					</div>
+					<div class="tv__item item">
+						<a href="#"><img src="img/03-tv/05.png" alt="TV Show poster"></a>
+					</div>
+					<div class="tv__item item">
+						<a href="#"><img src="img/03-tv/06.png" alt="TV Show poster"></a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="movies">
+			<div class="_container">
+				<h2 class="movies__title title"><a href="#">Trending Movies</a></h2>
+				<div class="movies__posters posters">
+					<!-- flex-контейнер -->
+					<div class="movies__item item">
+						<a href="#"><img src="img/04-movies/01.png" alt="Movie poster"></a>
+					</div>
+					<div class="movies__item item">
+						<a href="#"><img src="img/04-movies/02.png" alt="Movie poster"></a>
+					</div>
+					<div class="movies__item item">
+						<a href="#"><img src="img/04-movies/03.png" alt="Movie poster"></a>
+					</div>
+					<div class="movies__item item">
+						<a href="#"><img src="img/04-movies/04.png" alt="Movie poster"></a>
+					</div>
+					<div class="movies__item item">
+						<a href="#"><img src="img/04-movies/05.png" alt="Movie poster"></a>
+					</div>
+					<div class="movies__item item">
+						<a href="#"><img src="img/04-movies/06.png" alt="Movie poster"></a>
+					</div>
+				</div>
+				<a href="#" class="btn btn_active">See more</a>
+			</div>
+		</section>
+
+		<section class="genres">
+			<div class="_container">
+				<h2 class="genres__title title"><a href="#">Popular Genres</a></h2>
+				<div class="genres__items">
+					<div class="genres__item genres__item_romance">
+						<a href="#"><span class="genres__icon _icon-romance"></span><span>Romance</span></a>
+					</div>
+					<div class="genres__item genres__item_drama">
+						<a href="#"><span class="genres__icon _icon-drama"></span><span>Drama</span></a>
+					</div>
+					<div class="genres__item genres__item_historical">
+						<a href="#"><span class="genres__icon _icon-historical"></span><span>Historical</span></a>
+					</div>
+					<div class="genres__item genres__item_action">
+						<a href="#"><span class="genres__icon _icon-action"></span><span>Action</span></a>
+					</div>
+					<div class="genres__item genres__item_sci-fi">
+						<a href="#"><span class="genres__icon _icon-sci-fi"></span><span>Sci-fi</span></a>
+					</div>
+					<div class="genres__item genres__item_horror">
+						<a href="#"><span class="genres__icon _icon-horror"></span><span>Horror</span></a>
+					</div>
+					<div class="genres__item genres__item_comedy">
+						<a href="#"><span class="genres__icon _icon-comedy"></span><span>Comedy</span></a>
+					</div>
+					<div class="genres__item genres__item_documentary">
+						<a href="#"><span class="genres__icon _icon-documentary"></span><span>Documentary</span></a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="actors">
+			<div class="_container">
+				<h2 class="actors__title title"><a href="#">Popular Actors & Directors</a></h2>
+				<div class="actors__photos">
+					<div class="actors__item">
+						<a href="#"><img src="img/06-actors/01-Samantha_Bowen.png"
+								alt="Samantha Bowen photo"></a><span>Samantha
+							Bowen</span>
+					</div>
+					<div class="actors__item">
+						<a href="#"><img src="img/06-actors/02-Rhys_Birch.png" alt="Rhys Birch photo"></a><span>Rhys
+							Birch</span>
+					</div>
+					<div class="actors__item">
+						<a href="#"><img src="img/06-actors/03-James_Holloway.png" alt="James Holloway photo"></a><span>James
+							Holloway</span>
+					</div>
+					<div class="actors__item">
+						<a href="#"><img src="img/06-actors/04-Joshua_Walton.png" alt="Joshua Walton photo"></a><span>Joshua
+							Walton</span>
+					</div>
+					<div class="actors__item">
+						<a href="#"><img src="img/06-actors/05-Patrick_Elliott.png"
+								alt="Patrick Elliott photo"></a><span>Patrick
+							Elliott</span>
+					</div>
+					<div class="actors__item">
+						<a href="#"><img src="img/06-actors/06-Morgan_O'Neill.png" alt="Morgan O'Neill photo"></a><span>Morgan
+							O'Neill</span>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="notice">
+			<div class="_container">
+				<div class="notice__flex">
+					<a href="#" class="notice__left"><img src="img/07-notice/Big.Buck.Bunny-poster.png"
+							alt="Big Buck Bunny poster"></a>
+					<a href="#" class="notice__right"><img src="img/07-notice/2021.png" alt="2021 	image"><span>Coming
+							soon...</span></a>
+				</div>
+			</div>
+		</section>
+
+		<section class="registration">
+			<div class="_container">
+				<div class="registration__banner">
+					<h2 class="registration__title">Are You New Here?<br>Don't Wait, Register Now.</h2>
+					<a href="#" class="registration__btn btn_active">Register Now</a>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<footer class="footer">
+		<div class="_container">
+			<div class="footer__flex">
+				<div class="footer__logo">
+					<a href="#" class="footer__logo-link"><span class="_logotype"><span
+								class="_icon-logo-m"></span></span>box</a>
+				</div>
+				<div class="footer__items">
+					<a href="#" class="footer__item">Voice over and Subtitle</a>
+					<a href="#" class="footer__item">Voice Description</a>
+					<a href="#" class="footer__item">Help Center</a>
+					<a href="#" class="footer__item">Gift Cards</a>
+					<a href="#" class="footer__item">Media Center</a>
+					<a href="#" class="footer__item">Investor Relations</a>
+					<a href="#" class="footer__item">Job Opportunities</a>
+					<a href="#" class="footer__item">Terms of Use</a>
+					<a href="#" class="footer__item">Privacy</a>
+					<a href="#" class="footer__item">Legal Provisions</a>
+					<a href="#" class="footer__item">Cookies Preferences</a>
+					<a href="#" class="footer__item">Corporate Informations</a>
+					<a href="#" class="footer__item">Contact us</a>
+				</div>
+			</div>
+		</div>
+	</footer>
+</body>
+
+</html>
